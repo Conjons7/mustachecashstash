@@ -1,45 +1,28 @@
 import React, { Component } from 'react';
-import AddTodo from './addTodo/AddTodo';
-//now
+import Map from './Map'
 
-class App extends React.Component {
-  
-  render() {
-    return(
-      <div className='container'>
-        <div className='row'>
-          <div className="col-md-4">
-            <div className='panel panel-default'>
-              <div>
-                <AddTodo addTodoFn={this.addTodo}></AddTodo>
-              </div>
-            </div>
-          </div>
-          
-          <div className="col-md-8">
-            <div className="panel panel-default">
-              <div className="alert alert-success">
-              
-              </div>
-            </div>
+// import GoogleApiWrapper from './GoogleApiWrapper';
 
-          </div>
-        </div>
-      </div>
-      
-    );
+class App extends Component {
+
     
+
+  render() {
+ 
+
+    return (
+        <div className='container'>
+            <div className='Welcome'>
+                <h1>Sweet San Diego Sunsets</h1>
+                <h2>Welcome to our website!</h2>
+            </div>
+            <div id="map">
+              <Map/>
+            </div>
+        </div>
+    );
   }
-
-
-  
-  
-
 }
 
 
 export default App;
-
-
-
-
